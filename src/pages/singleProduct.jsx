@@ -1,6 +1,12 @@
+import ProductPreview from "../components/productPreview";
+import { useParams } from "react-router-dom";
 function SingleProduct() {
+    const {id} = useParams()
     return ( 
-        <h1>Product name</h1>
+        <>
+        <h1>Sigle Product {id}</h1>
+        <ProductPreview />
+        </>
      );
 }
 
